@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVPMSLCryptoAlpha - HOME</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="bg-music" loop>
+        <source src="musica.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        function startMusic() {
+            var audio = document.getElementById('bg-music');
+            if (audio) audio.play().catch(function (e) { });
+            document.removeEventListener('click', startMusic);
+            document.removeEventListener('touchstart', startMusic);
+        }
+        document.addEventListener('click', startMusic);
+        document.addEventListener('touchstart', startMusic);
+    </script>
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="Background.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+
+    <div class="container">
+        <main class="card">
+            <h1>AVPMSLCryptor</h1>
+            <p class="subtitle">&lt;// BENVENUTI NEL SISTEMA &gt;</p>
+
+            <img src="logo.png" alt="Logo AVPMSLCryptoAlpha" width="200">
+
+            <hr>
+            <p>Questo è il sito ufficiale del software AVPMSLCryptor.</p>
+            <p>Il miglior software per criptare i tuoi segreti.</p>
+            <hr>
+
+            <nav>
+                <a href="features.html">Funzionalità</a>
+                <a href="about.html">Chi Siamo</a>
+            </nav>
+
+            <hr>
+            <p class="subtitle" style="margin-bottom: 0;">Made By Arthur..</p>
+        </main>
+    </div>
+</body>
+
+</html>
